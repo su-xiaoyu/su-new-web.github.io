@@ -2,15 +2,62 @@
 <html>
 <head>
 	<title>主页</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		ul.left{
+			margin: 0;
+			margin-top: 65px;
+			margin-left: 65px;
+			padding: 0;
+		    width: 150px;
+		    border-width: 1px;
+		    border-color: white;
+		    position: fixed;
+		    text-align: center;
+		    vertical-align: text-bottom;
+		    height: 100%;
+		    overflow: auto;
+			font-size: 25px;
+		}
+		li a {
+		    display: block;
+		    color: white;
+		    padding: 8px 16px;
+		    text-decoration: none;
+		}
+
+		li a.active {
+		    background-color: #87CEFA;
+		    color: white;
+		}
+
+		li a:hover:not(.active) {
+		    background-color: #ADD8E6;
+		    color: white;
+		}
+		li img{
+			height:25px; 
+			width:25px;
+			display: inline-block;
+		}
+		div.header{
+			color: white;
+			margin-left: 230px;
+			font-size: 35px;
+	</style>
 </head>
-<body>
-	<div style="margin-left: 100px ;font-size: 25px;margin-bottom: 0cm">
-		<p><a href="index.html">返回</a></p>
-	</div>
-	<table border="1" align="center">
-		<tr>
-			<td valign="middle" align="center"><img src="picture/webmake.png" width="1100px"></td>
-		</tr>
-	</table>
+<body bgcolor="#15202b">
+	<ul class="left">
+		<li><a href="index.html"><img src="ico/back.svg">返回</a></li>
+		<li><a href="" class="active">主页</a></li>
+		<li><a href="">联系</a></li>
+		<li><a href="">关于</a></li>
+		<li><a href="pay.html"><img src="ico/pay.svg">打赏</a></li>
+	</ul>
+<div class="header" style="border-width: 1px;border-color: white;">
+	<p align="center">Hello！欢迎来到我的主页</p>
+</div>
 </body>
 </html>
