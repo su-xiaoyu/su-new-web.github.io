@@ -6,21 +6,23 @@
 		body{
 			margin: 0;
 		}
-		/*左部导航栏*/
-		ul.left{
+
+		ul.nav{
 			margin: 0;
-			margin-top: 60px;
-			margin-left: 50px;
+			margin-left: 5%;
 			padding: 0;
-		    width: 150px;
 		    border-color: white;
 		    position: fixed;
-		    text-align: center;
-		    vertical-align: text-bottom;
+		    width: 8%;
 		    height: 100%;
-		    overflow: auto;
-			font-size: 25px;
-			/*border:3px solid;*//*测试用*/
+		    overflow: hidden;
+			font-size: 25px;		    
+			text-align: center;
+			list-style-type: none;
+			/*border:3px solid white;/*测试用*/
+		}
+		li{
+			float: none;
 		}
 		li a {
 		    display: block;
@@ -46,40 +48,42 @@
 		/*头部区域*/
 		div.header{
 			height: 50px;
-			color: white;
-			font-size: 35px;
-			/*border:3px solid;*//*测试用*/
+			/*border:3px solid white;/*测试用*/
 		}
 		div.header p{
+			font-size: 25px;
 			margin-top: 0;
 			text-align: center;
+			color: white;
 		}
+		
 		/*左部区域*/
 		div.leftcolumn{
 			display:inline-block; 
 			background-color: #35363A;
 			color: white;
 			text-align: center;
-			margin-top: 10px;
-			margin-left: 220px;
-			width: 900px;
-		
+			margin-left: 25%;
+			width: 50%;
+			/*border:3px solid white;/*测试用*/
 		}
+
 		/*右部区域*/
 		div.rightcolumn{
 			display:inline-block; 
 			background-color: #35363A;
 			color: white;
 			text-align: center;
-			margin-left: 10px;
-			width: 300px;
+			width: 20%;
+			/*border:3px solid white;/*测试用*/
 		}
+
 		/*尾部区域*/
 		div.footer{
 			color: white;
 			background-color: black;
 			font-size: 15px;
-			/*border:3px solid;*//*测试用*/
+			/*border:3px solid white;/*测试用*/
 		}
 		div.footer p{
 			margin-top: 0;
@@ -92,86 +96,105 @@
 		div.footer a:hover{
 			text-decoration: underline;
 		}
+
+		/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+		@media screen and (max-width: 800px) {
+			ul.nav{
+				margin: 0;
+				width: 100%;	    
+			    position: static;
+			}
+			li{
+				display:inline-block;
+		   		text-align: center;
+			}
+			div.leftcolumn, div.rightcolumn {  
+				margin: 0;
+				width: 100%;
+		  }
+		}		
 	</style>
 </head>
-<body bgcolor="#15202b">
-	<ul class="left">
+<body bgcolor="#15202b">	
+	<div class="header">
+		<p>Hello！欢迎来到我的主页</p>
+	</div>
+    <ul class="nav">
 		<li><a href="index.html"><img src="ico/back.svg">返回</a></li>
 		<li><a href="" class="active">主页</a></li>
 		<li><a href="">联系</a></li>
-		<li><a href="">关于</a></li>
+		<li><a href="#footer">关于</a></li>
 		<li><a href="pay.html"><img src="ico/pay.svg">打赏</a></li>
-	</ul>
-<div class="header">
-	<p>Hello！欢迎来到我的主页</p>
-</div>
-<div class="leftcolumn">
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-</div>
-<div class="rightcolumn">
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-	<p>Hello！欢迎来到我的主页</p>
-</div>
-<div class="footer">
-	<p>
-		<a href="home.html">——苏晓宇</a><br/>
-		联系：QQ:2512087764<br/>
-		<a href="https://mail.qq.com/" target="_blank">2512087764@qq.com</a><br/>
-		<a href="https://mail.google.com/" target="_blank">su2512087764@gmail.com</a>
-	</p>
-</div>
+	</ul>		
+	<div class="leftcolumn">
+		<p>区域1</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+	</div>
+	<div class="rightcolumn">
+		<p>区域2</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+		<p>Hello！欢迎来到我的主页</p>
+	</div>
+	<div class="footer">
+		<p>
+			<a href="home.html" id="footer">——苏晓宇</a><br/>
+			联系：QQ:2512087764<br/>
+			<a href="https://mail.qq.com/" target="_blank">2512087764@qq.com</a><br/>
+			<a href="https://mail.google.com/" target="_blank">su2512087764@gmail.com</a>
+		</p>
+	</div>
 </body>
 </html>
