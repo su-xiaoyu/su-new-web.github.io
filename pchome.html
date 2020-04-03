@@ -5,20 +5,21 @@
 	<style type="text/css">
 		body{
 			margin: 0;
+			margin-left: 50px;
+			margin-right: 50px;
 		}
 		/*导航栏*/
 		ul.nav{
 			margin: 0;
-			margin-left: 5%;
 			padding: 0;
 			position: fixed;
-		    width: 8%;
+		    width: 120px;
 		    height: 100%;
 		    overflow: hidden;
 			font-size: 25px;		    
 			text-align: center;
 			list-style-type: none;
-			/*border:3px solid white;/*测试用*/
+			border:1px solid white;/*测试用*/
 		}
 		li{
 			float: none;
@@ -55,7 +56,7 @@
 		    padding: 0;
 		    overflow: hidden;
 		    text-align: center;
-			/*border:3px solid white;/*测试用*/
+			/*border:1px solid white;/*测试用*/
 		}
 		.footernav li{
 		    display:inline-block;
@@ -77,12 +78,11 @@
 		    background-color: #ADD8E6;
 		    color: white;
 		}
+
 		/*头部区域*/
 		div.header{
 			width: 100%;
-			height: 50px;
-			margin: 0;
-			/*border:3px solid white;/*测试用*/
+			border:1px solid white;/*测试用*/
 		}
 		div.header p{
 			font-size: 25px;
@@ -92,17 +92,17 @@
 
 		/*简介区域*/
 		div.mycard{
-			margin: 0;
-			margin-left: 68%;
-			padding: 0;
-		    width: 20%;
-		    height: 50%;
-			font-size: 20px;
-			position: fixed;		    
+			display:inline-block; 
+			background-color: #35363A;
+			color: white;
 			text-align: center;
-			overflow: auto;
-			border:3px solid white;/*测试用*/
+			margin: 0px;
+			margin-bottom: 10px;
+			width: 450px;
+			overflow: hidden;
+			border:1px solid white;/*测试用*/
 		}
+		
 		/*左部区域*/
 		div.leftcolumn{
 			display:inline-block; 
@@ -110,9 +110,12 @@
 			color: white;
 			text-align: center;
 			float: left;
-			margin-left: 13%;
-			width: 55%;
-			/*border:3px solid white;/*测试用*/
+			margin: 10px;
+			margin-left: 130px;
+			margin-top: 0;
+			width: 800px;
+			height: 100%;
+			border:1px solid white;/*测试用*/
 		}
 
 		/*右部区域*/
@@ -121,17 +124,26 @@
 			background-color: #35363A;
 			color: white;
 			text-align: center;
-			margin-left: 10px;
-			width: 25%;
-			/*border:3px solid white;/*测试用*/
+			margin: 0px;
+			margin-bottom: 10px;
+			width: 450px;
+			border:1px solid white;/*测试用*/
+		}
+		/* 列后面清除浮动 */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
 		}
 
 		/*尾部区域*/
 		div.footer{
+			width: 100%
+			height:100px;
 			color: white;
 			background-color: black;
 			font-size: 15px;
-			/*border:3px solid white;/*测试用*/
+			/*border:1px solid white;/*测试用*/
 		}
 		div.footer p{
 			margin-top: 0;
@@ -152,114 +164,121 @@
 				width: 100%;	    
 			    position: static;
 			}
+			li a{
+				padding: 8px 8px;
+			}
 			li{
 				display:inline-block;
 		   		text-align: center;
 			}
-			div.leftcolumn, div.rightcolumn {  
+			div.leftcolumn, div.rightcolumn, div.mycard {  
 				margin: 0;
 				width: 100%;
 		  }
-		}		
+		  body{
+		  	margin: 0;
+		  }
+		}	
 	</style>
 </head>
-<body bgcolor="#15202b">	
+<body bgcolor="#15202b">
 	<div class="header">
 		<p>Hello！欢迎来到我的主页</p>
-		<ul class="nav">
-				<li><a href="index.html"><img src="ico/back.svg">返回</a></li>
-				<li><a href="" class="active">主页</a></li>
-				<li><a href="">联系</a></li>
-				<li><a href="#footer">关于</a></li>
-				<li><a href="pay.html"><img src="ico/pay.svg">打赏</a></li>
-			</ul>
 	</div>
-	<div class="leftcolumn">
-		<p>区域1</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-
-	</div>
-	<div class="rightcolumn">
-		<p>区域2</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-		<p>网站正在建设中……</p>
-	</div>
-	<div class="footer">
-		<div>
-			<ul class="footernav" style="font-size: 15px;">
-				<li><a href="pchome.html" style="text-decoration: none;"><img src="ico/pc.svg" width="15px" height="20px"> 电脑端</a></li>
-				<li><a href="pehome.html" style="text-decoration: none;"><img src="ico/phone.svg" width="15px" height="20px"> 手机端</a></li>
-			</ul>			
+	<ul class="nav">
+			<li><a href="index.html"><img src="ico/back.svg">返回</a></li>
+			<li><a href="" class="active">主页</a></li>
+			<li><a href="">联系</a></li>
+			<li><a href="#footer">关于</a></li>
+			<li><a href="pay.html"><img src="ico/pay.svg">打赏</a></li>
+		</ul>	
+	<div class="row">
+		<div class="leftcolumn">
+			<p>区域1</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
 		</div>
-		<p>
-			<a href="pchome.html" >——苏晓宇</a><br/>
-			<a id="footer">联系：QQ:2512087764</a><br/>
-			<a href="https://mail.qq.com/" target="_blank">2512087764@qq.com</a><br/>
-			<a href="https://mail.google.com/" target="_blank">su2512087764@gmail.com</a>
-		</p>
+		<div class="mycard">
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+		</div>	
+		<div class="rightcolumn">
+			<p>区域2</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>
+		</div>
 	</div>
+		<div class="footer">
+			<div>
+				<ul class="footernav" style="font-size: 15px;">
+					<li><a href="pchome.html" style="text-decoration: none;"><img src="ico/pc.svg" width="15px" height="20px"> 电脑端</a></li>
+					<li><a href="pehome.html" style="text-decoration: none;"><img src="ico/phone.svg" width="15px" height="20px"> 手机端</a></li>
+				</ul>			
+			</div>
+			<p>
+				<a href="pchome.html" >——苏晓宇</a><br/>
+				<a id="footer">联系：QQ:2512087764</a><br/>
+				<a href="https://mail.qq.com/" target="_blank">2512087764@qq.com</a><br/>
+				<a href="https://mail.google.com/" target="_blank">su2512087764@gmail.com</a>
+			</p>
+	</div>	
 </body>
 </html>
