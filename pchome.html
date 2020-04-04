@@ -19,7 +19,7 @@
 			font-size: 25px;		    
 			text-align: center;
 			list-style-type: none;
-			border:1px solid white;/*测试用*/
+			/*border:1px solid white;/*测试用*/
 		}
 		li{
 			float: none;
@@ -82,31 +82,18 @@
 		/*头部区域*/
 		div.header{
 			width: 100%;
-			border:1px solid white;/*测试用*/
+			/*border:1px solid white;/*测试用*/
 		}
 		div.header p{
 			font-size: 25px;
 			text-align: center;
 			color: white;
-		}
+		}	
 
-		/*简介区域*/
-		div.mycard{
-			display:inline-block; 
-			background-color: #35363A;
-			color: white;
-			text-align: center;
-			margin: 0px;
-			margin-bottom: 10px;
-			width: 450px;
-			overflow: hidden;
-			border:1px solid white;/*测试用*/
-		}
-		
 		/*左部区域*/
 		div.leftcolumn{
 			display:inline-block; 
-			background-color: #35363A;
+			/*background-color: #35363A;*/
 			color: white;
 			text-align: center;
 			float: left;
@@ -115,19 +102,47 @@
 			margin-top: 0;
 			width: 800px;
 			height: 100%;
-			border:1px solid white;/*测试用*/
+			border:1px solid #696969;/*测试用*/
+		}
+
+		/* 图像部分 */
+		div.fakeimg {
+		  width: 100%;
+		}
+		/* 文章卡片效果 */
+		div.card {
+		  color:white;
+		  padding: 20px;
+		  margin-left: 5px;
+		  margin-right: 5px;
+		  margin-bottom: 20px;
+		  border: 0.5px solid #696969;
+		}
+
+		/*简介区域*/
+		div.mycard{
+			display:inline-block; 
+			/*background-color: #35363A;*/
+			color: white;
+			text-align: center;
+			margin: 0px;
+			float: right;
+			margin-bottom: 10px;
+			width: 470px;
+			border:0.05px solid grey;/*测试用*/
 		}
 
 		/*右部区域*/
 		div.rightcolumn{
 			display:inline-block; 
-			background-color: #35363A;
+			/*background-color: #35363A;*/
 			color: white;
 			text-align: center;
 			margin: 0px;
+			float: right;
 			margin-bottom: 10px;
-			width: 450px;
-			border:1px solid white;/*测试用*/
+			width: 470px;
+			border: 1px solid grey;/*测试用*/
 		}
 		/* 列后面清除浮动 */
 		.row:after {
@@ -173,11 +188,16 @@
 			}
 			div.leftcolumn, div.rightcolumn, div.mycard {  
 				margin: 0;
+				margin-top: 10px;
 				width: 100%;
-		  }
-		  body{
-		  	margin: 0;
-		  }
+		    }
+		    div.leftcolumn{
+				margin: 0;
+				width: 100%;		    	
+		    }
+		  	body{
+		  		margin: 0;
+		  }	
 		}	
 	</style>
 </head>
@@ -186,48 +206,35 @@
 		<p>Hello！欢迎来到我的主页</p>
 	</div>
 	<ul class="nav">
-			<li><a href="index.html"><img src="ico/back.svg">返回</a></li>
-			<li><a href="" class="active">主页</a></li>
-			<li><a href="">联系</a></li>
-			<li><a href="#footer">关于</a></li>
-			<li><a href="pay.html"><img src="ico/pay.svg">打赏</a></li>
-		</ul>	
+		<li><a href="index.html"><img src="ico/back.svg">返回</a></li>
+		<li><a href="" class="active"><img src="ico/home.svg">主页</a></li>
+		<li><a href="#footerContact"><img src="ico/contact.svg">联系</a></li>
+		<li><a href="#footerAbout"><img src="ico/about.svg">关于</a></li>
+		<li><a href="pay.html"><img src="ico/pay.svg">打赏</a></li>
+	</ul>	
 	<div class="row">
 		<div class="leftcolumn">
-			<p>区域1</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
+			    <div class="card">
+			    	<h2 align="center">Hello！欢迎来到我的主页</h2>
+                    <h5 align="left">2020年11点02分</h5>
+                    <div class="fakeimg" style="height:200px;"><img src="cardpicture/qingming.jpg" height="200px"></div>
+                    <p>......</p>
+      				<p>我的第一篇写在这里的文章</p>
+   				</div>
+			    <div class="card">
+			    	<h2 align="center">Hello！欢迎来到我的主页</h2>
+                    <h5 align="left">xxxx年xx点xx分</h5>
+                    <div class="fakeimg" style="height:200px;">图片</div>
+                    <p>......</p>
+      				<p>......</p>
+   				</div>
+			    <div class="card">
+			    	<h2 align="center">Hello！欢迎来到我的主页</h2>
+                    <h5 align="left">xxxx年xx点xx分</h5>
+                    <div class="fakeimg" style="height:200px;">图片</div>
+                    <p>......</p>
+      				<p>......</p>
+   				</div>
 		</div>
 		<div class="mycard">
 			<p>我的简介</p>
@@ -244,6 +251,12 @@
 			<p>我的简介</p>
 			<p>我的简介</p>
 			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>
+			<p>我的简介</p>								
 		</div>	
 		<div class="rightcolumn">
 			<p>区域2</p>
@@ -263,7 +276,7 @@
 			<p>网站正在建设中……</p>
 			<p>网站正在建设中……</p>
 			<p>网站正在建设中……</p>
-			<p>网站正在建设中……</p>
+			<p>网站正在建设中……</p>					
 		</div>
 	</div>
 		<div class="footer">
@@ -274,10 +287,13 @@
 				</ul>			
 			</div>
 			<p>
-				<a href="pchome.html" >——苏晓宇</a><br/>
-				<a id="footer">联系：QQ:2512087764</a><br/>
-				<a href="https://mail.qq.com/" target="_blank">2512087764@qq.com</a><br/>
-				<a href="https://mail.google.com/" target="_blank">su2512087764@gmail.com</a>
+				Copyright&copy;<a href="pchome.html" id="footerAbout">——苏晓宇</a><br/>
+				<a id="footerContact" style="font-size: 18px;text-decoration: none;"><img src="ico/qq.svg" width="15px" height="20px">2512087764</a><br/>
+				<a id="footerContact" href="https://mail.qq.com/" target="_blank">
+					<img src="ico/mail.svg" width="25px" height="20px">2512087764@qq.com
+				</a><br/>
+				<a href="https://mail.google.com/" target="_blank">su2512087764@gmail.com
+				</a>
 			</p>
 	</div>	
 </body>
