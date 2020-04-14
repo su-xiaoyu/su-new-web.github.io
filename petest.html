@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+    <uses-permission android:name="android.permission.INTERNET"/>
 	<title>	半佛老师系列视频</title>
 	<style type="text/css">
 		body{
@@ -15,33 +17,32 @@
 			/*background-color: #35363A;*/
 			color: white;
 			margin: 0px;
-			width: 400px;
+			width: 100%;
 			margin-bottom: 10px;
 			text-align: center;
 			border-radius:30px;
 			border: 1px solid grey;
-			position: fixed;
+			position: static;
 		}
-		div.mycard .myInformation{
+		div.myInformation{
 			font-size: 20px;
 			border-bottom: 1px solid grey;
 			vertical-align: middle;
 		}
-		div.mycardmycardQR{
+		div.mycardQR{
 			float: left;
 			margin-top: 5px;
 			text-align: center;
 		}
 
-		div.mycardmycardQR img{
+		div.mycardQR img{
 		  	border-radius:20px;
 			border:1px solid white;/*测试用*/			
 		}
 		/*文章区域*/
 		div.article{
 			display: inline-block;
-			margin-left: 410px;
-			width: 70%;			
+			width: 100%;			
 			text-align: center;
 			border:1px solid gray;/*测试用*/	
 			border-radius: 30px;		
@@ -50,25 +51,12 @@
 		div.article iframe{
 			border-radius: 30px;
 			height: 500px;
-			width: 800px;
+			width: 100%;
 			border: none;
 		}
 		div.article p{
 			font-size: 15px;
 			color: white;
-		}
-		/* 响应式布局 - 屏幕尺寸小于 1000px 时，三列布局改为上下布局 */
-		@media screen and (max-width: 1500px) {
-			div.mycard .article{
-				display: block;
-				width: 100%;
-				margin: 0px;
-				margin-top: 10px;
-				position: static;
-			}
-			iframe{
-				width: 100%;
-			}
 		}
 	</style>
 </head>
@@ -105,9 +93,9 @@
 	</div>
 	<div>
 		<div class="article">
-			<iframe src="https://player.bilibili.com/player.html?aid=795248766&bvid=BV1cC4y1x7TA&cid=175252126&page=1"> </iframe>
+			<iframe src="http://player.bilibili.com/player.html?aid=795248766&bvid=BV1cC4y1x7TA&cid=175252126&page=1"> </iframe>
 			<p>2020年4月12日</p>
-			<iframe src="https://player.bilibili.com/player.html?aid=497654364&bvid=BV16K411L7tR&cid=176903091&page=1"> </iframe>
+			<iframe src="http://player.bilibili.com/player.html?aid=497654364&bvid=BV16K411L7tR&cid=176903091&page=1"> </iframe>
 		</div>	
 	</div>
 </body>

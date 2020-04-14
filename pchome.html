@@ -7,6 +7,7 @@
 			margin: 0;
 			margin-left: 50px;
 			margin-right: 50px;
+			background-color: #15202b;
 		}
 		/*导航栏*/
 		ul.nav{
@@ -136,9 +137,32 @@
 			padding: 0px;
 			background: url(ico/calendar.svg);
 			background-size:cover;
-			vertical-align: middle;
-			
+			vertical-align: middle;	
 		}
+
+		/*查看更多按钮*/
+		ul.lookmore{
+			width: 100%;
+			height: 35px;
+			font-size: 20px;
+			margin: 0;
+			padding: 0%;
+			text-align: right;
+			list-style-type: none;
+		}
+		ul.lookmore li a{
+			background-color:#15202b;
+			color: rgb(0, 0, 0);
+			text-decoration: none;
+			padding: 3px 5px;
+			border-radius: 30px;
+		}
+		ul.lookmore li a:hover{
+			background-color:  #87CEFA;
+			text-decoration: none;
+			border-radius: 30px;
+		}
+
 		/*简介区域*/
 		div.mycard{
 			display: inline-block;
@@ -257,6 +281,9 @@
 				<h2 align="center">B站4个月300万粉丝：硬核的半佛仙人——系列视频</h2>
 				<h4 align="left" class="cardTime">2020年4月12日</h4>
 				<p style="font-size: 25px;"><a href="article/20200412.html">👉半佛老师系列视频（正在收录中）👈</a></p>
+				<ul class="lookmore">
+					<li><a href="article/20200412.html">点击这里查看更多</a></li>
+				</ul>
    			</div>
 			<div class="card">
 				<h2 align="center">Hello！欢迎来到我的主页</h2>
@@ -339,11 +366,3 @@
 	</div>	
 </body>
 </html>
-
-
-
-
-
-
-
-
