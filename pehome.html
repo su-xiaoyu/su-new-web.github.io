@@ -6,8 +6,7 @@
 	<uses-permission android:name="android.permission.INTERNET"/>
 	<style type="text/css">
 		body{
-			margin: 0;
-			width: 100%;
+			margin: 10px;
 			height: 100%;
 		}
 		ul.nav{
@@ -18,6 +17,7 @@
 		    vertical-align: middle;
 		    text-align: center;
 			padding: 0px;
+			width: 100%;
 			/*border:3px solid white;/*测试用*/
 		}
 		li{
@@ -37,6 +37,7 @@
 			margin-top: 15px;
 		    text-decoration: none;
 		    border-radius:30px;
+			text-align: center;
 		}
 
 		li a.active {
@@ -65,6 +66,8 @@
 
 		/*上部区域*/
 		div.uppercolumn{
+			/*margin-left: 10px;
+			margin-right: 10px;*/
 			display:inline-block; 
 			color: white;
 			text-align: center;
@@ -72,12 +75,19 @@
 			margin-top: 10px;
 			margin-bottom: 10px;
 			/*border:3px solid white;/*测试用*/
-		
+		}
+		div.uppercolumn a{
+			text-decoration: none;
+			color: white;
+		}
+		div.uppercolumn a:hover{
+			text-decoration: underline;
+			color: white;
 		}
 
 		/* 图像部分 */
 		div.fakeimg {
-		  width: 80%;
+		  max-width: 100%;
 		}
 		/* 文章卡片效果 */
 		div.card {
@@ -87,8 +97,33 @@
 		  border: 0.5px solid #696969;
 		}
 
+		/*查看更多按钮*/
+		ul.lookmore{
+			width: 100%;
+			height: 35px;
+			font-size: 20px;
+			margin: 0;
+			padding: 0%;
+			text-align: right;
+			list-style-type: none;
+		}
+		ul.lookmore li a{
+			background-color:#15202b;
+			color: rgb(0, 0, 0);
+			text-decoration: none;
+			padding: 3px 5px;
+			border-radius: 30px;
+		}
+		ul.lookmore li a:hover{
+			background-color:  #87CEFA;
+			text-decoration: none;
+			border-radius: 30px;
+		}
+
 		/*下部区域*/
 		div.lowercolumn{
+			/*margin-left: 10px;
+			margin-right: 10px;*/
 			display:inline-block; 
 			color: white;
 			text-align: center;
@@ -142,6 +177,15 @@
 		<li><a href="pay.html"><img src="ico/pay.svg">打赏</a></li>
 	</ul>
 	<div class="uppercolumn">
+		<div class="card">
+			<h2 align="center">B站4个月300万粉丝：硬核的半佛仙人——系列视频</h2>
+			<h4 align="left" class="cardTime">2020年4月12日</h4>
+			<p style="font-size: 25px;">半佛老师系列视频（正在收录中）</p>
+			<ul class="lookmore">
+				<li><a href="article/20200412.html">点击这里查看更多</a></li>
+			</ul>
+			<p style="font-size: 25px;"><a href="article/musicShare/Vicetone_Cozi Zuehlsdorff-Nevada.mp3">音乐分享</a></p>
+		</div>
 		<div class="card">
 			<h2 align="center">Hello！欢迎来到我的主页</h2>
             <h4 align="left" ><img src="ico/calendar.svg" width="15px" height="20px">2020年4月4日</h5>
